@@ -42,8 +42,8 @@ jobs:
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        BASE_BRANCH: development # The branch the action should deploy from.
-        BRANCH: main # The branch the action should deploy to.
-        FOLDER: release/wwwroot # The folder the action should deploy.
-        SINGLE_COMMIT: true
+        token: ${{ secrets.TOKEN }}
+        #BASE_BRANCH: development # The branch the action should deploy from.
+        branch: main # The branch the action should deploy to.
+        folder: release/wwwroot # The folder the action should deploy.
+        single-commit: true
