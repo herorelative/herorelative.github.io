@@ -487,9 +487,6 @@ video {
   white-space: nowrap;
   border-width: 0;
 }
-.collapse {
-  visibility: collapse;
-}
 .fixed {
   position: fixed;
 }
@@ -1244,6 +1241,12 @@ video {
 
   .sm\:ring-gray-900\/10 {
     --tw-ring-color: rgb(17 24 39 / 0.1);
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:hidden {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
