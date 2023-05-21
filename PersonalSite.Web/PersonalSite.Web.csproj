@@ -1,12 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
-    <RunAOTCompilation>true</RunAOTCompilation>
-    <BlazorEnableCompression>false</BlazorEnableCompression>
+    <!--<RunAOTCompilation>true</RunAOTCompilation>-->
+    <!--<BlazorEnableCompression>false</BlazorEnableCompression>-->
+    <NpmLastInstall>node_modules/./last-install</NpmLastInstall>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,5 +18,22 @@
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
+
+  <Target Name="CheckNPMIsInstalled" BeforeTargets="InstallNPM">
+    <Exec Command="npm -v" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="You must install npm to run this task" />
+  </Target>
+  
+  <Target Name="InstallNPM" BeforeTargets="BuildTailwindCSS">
+    <Exec Command="npm install" />
+    <Touch Files="$(NpmLastInstall)" AlwaysCreate="true" />
+  </Target>
+  
+  <Target Name="BuildTailwindCSS" BeforeTargets="Compile">
+    <Exec Command="npm run build:debug" Condition="$(Configuration) == 'Debug'" />
+    <Exec Command="npm run build:release" Condition="$(Configuration) == 'Release'" />
+  </Target>
 
 </Project>
