@@ -35,5 +35,7 @@
     <Exec Command="npm run build:debug" Condition="$(Configuration) == 'Debug'" />
     <Exec Command="npm run build:release" Condition="$(Configuration) == 'Release'" />
   </Target>
+  
+  <ProjectExtensions><VisualStudio><UserProperties wwwroot_4sample-data_4package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

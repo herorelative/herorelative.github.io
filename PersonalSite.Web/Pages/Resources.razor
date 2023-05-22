@@ -1,0 +1,20 @@
+﻿@page "/resources"
+@inject HttpClient Http
+
+<PageTitle>Zar Ni Myo - Resources</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="Frequently collected amazing development resources.">
+</HeadContent>
+
+<SinglePageTitle Title="Development Resources" Description="Amazing Development resources. ⚡Resources are added frequently!" />
+
+<ResourceList Title="" Path="sample-data/test-data.json" />
+
+@code {
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    //    //resourceItems = await Http.GetFromJsonAsync<ResourceItem[]>("sample-data/test-data.json");
+    //}
+}

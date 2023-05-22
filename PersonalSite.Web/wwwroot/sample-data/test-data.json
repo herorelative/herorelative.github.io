@@ -1,0 +1,74 @@
+[
+  {
+    "title": "appwrite",
+    "url": "https://appwrite.io",
+    "summary": "Appwrite is a secure, open-source backend that abstracts the complexity of common, complex, and repetitive tasks required for building a modern app. Appwrite provides you with a set of secure APIs, tools, and a management console UI to help you build your apps quickly without compromising security. Use Appwrite to add user authentication and management, data and file storage, run server-side code, image manipulation, localization, and more into your apps.",
+    "tag": "hosting"
+  },
+  {
+    "title": "Realtime Colors",
+    "url": "https://realtimecolors.com/",
+    "summary": "Colors are one of the most important parts of web design/UI design. The Realtime Colors team spend a lot of time trying to figure them out. This tool aims to simplify that process, specifically for web design.",
+    "tag": "color"
+  },
+  {
+    "title": "Cyclic",
+    "url": "https://cyclic.sh",
+    "summary": "Cyclic works by integrating with your GitHub repos. It will build and deploy your code on every merge or push from your selected branch. Deploy your full stack serverless app on cyclic in seconds.",
+    "tag": "hosting"
+  },
+  {
+    "title": "Getting Real",
+    "url": "https://basecamp.com/gettingreal",
+    "summary": "The smarter, faster, easier way to build a successful web application.",
+    "tag": "ebook"
+  },
+  {
+    "title": "supabase",
+    "url": "https://supabase.com",
+    "summary": "Supabase is an open source Firebase alternative for building secure and performant Postgres backends with minimal configuration.",
+    "tag": "hosting"
+  },
+  {
+    "title": "Shape Up",
+    "url": "https://basecamp.com/shapeup",
+    "summary": "Stop Running in Circles and Ship Work that Matters.",
+    "tag": "ebook"
+  },
+  {
+    "title": "Flat Icon",
+    "url": "https://flaticon.com",
+    "summary": "Access Icons and Stickers for your projects. Images made by and for designers in PNG, SVG, EPS, PSD and CSS formats.",
+    "tag": "icon"
+  },
+  {
+    "title": "MockAPI I/O",
+    "url": "https://mockapi.io",
+    "summary": "The easiest way to mock REST APIs, Quickly setup endpoints, generate custom data, and preform operations on it using RESTful interface.",
+    "tag": "api"
+  },
+  {
+    "title": "Icons8",
+    "url": "https://icons8.com",
+    "summary": "Icons, illustrations, photos, music, and design tools for your next project.",
+    "tag": "icon"
+  },
+  {
+    "title": "Railway",
+    "url": "https://railway.app",
+    "summary": "Railway is an infrastructure platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud.",
+    "tag": "hosting"
+  },
+  {
+    "title": "Box Icons",
+    "url": "https://boxicons.com",
+    "summary": "Simple Open Source High Quality Web Icons carefully crafted for designers & developers.",
+    "tag": "icon"
+  },
+  {
+    "title": "Hero Icons",
+    "url": "https://heroicons.com",
+    "summary": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+    "tag": "icon"
+  }
+]

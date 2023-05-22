@@ -1,0 +1,70 @@
+﻿@inject HttpClient Http
+
+<div class="bg-white">
+    <div class="relative isolate px-3 pt-4 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="mx-auto max-w-2xl py-4 sm:py-24 lg:py-12">
+            <div class="">
+                @*<h2 class="text-2xl font-bold tracking-tight text-gray-600 sm:text-4xl mb-3">@Title</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Desc</p>*@
+                <div class="divide-y divide-gray-500\/10">
+                    @if (resourceItems == null)
+                    {
+                        <p><em>Loading...</em></p>
+                    }
+                    else
+                    {
+                        @foreach (var item in resourceItems)
+                        {
+                            <div class="card bg-transparent h-38 px-0">
+                                <a href="@item.Url" target="_blank">
+                                <div class="flex justify-between items-center">
+                                    <h2 class="text-2xl font-bold text-dark py-2">@item.Title</h2>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </div>
+                                <p class="text-left py-4 font-semibold group-hover:bg-primary">@item.Summary</p>
+                                <div class="pb-6 flex flex-wrap gap-2">
+                                    <p class="text-[14px] text-blue">#@item.Tag</p>
+                                </div>
+                                </a>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+
+    [Parameter]
+    public string? Path { get; set; }
+
+    private ResourceItem[]? resourceItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        resourceItems = await Http.GetFromJsonAsync<ResourceItem[]>(Path);
+    }
+
+    public class ResourceItem
+    {
+        public string? Title { get; set; }
+
+        public string? Url { get; set; }
+
+        public string? Summary { get; set; }
+
+        public string? Tag { get; set; }
+    }
+}
