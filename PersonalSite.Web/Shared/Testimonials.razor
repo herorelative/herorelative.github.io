@@ -7,8 +7,8 @@
         </div>
         <div class="mx-auto max-w-2xl py-4 sm:py-24 lg:py-12">
             <div class="text-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-600 sm:text-4xl mb-2">@Title</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-600">@Description</p>
+                <h2 class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl mb-3">@Title</h2>
+                <p class="text-2xl leading-8 text-gray-700">@Description</p>
             </div>
                 <div class="divide-y divide-gray-500\/10">
                     @if (testimonialItems == null)
@@ -20,7 +20,7 @@
                         @foreach (var item in testimonialItems)
                         {
                             <div class="card bg-transparent h-38 px-0">
-                                <p class="text-left text-lg leading-8 py-4 group-hover:bg-primary">@item.Testimonial</p>
+                                <p class="text-left text-lg leading-8 py-4 text-gray-600 group-hover:bg-primary">@item.Testimonial</p>
                                 <div class="flex flex-1 flex-col">
                                     <h3 class="block text-2xl font-bold text-dark py-2">@item.Name</h3>
                                     @*<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

@@ -6,10 +6,22 @@
     "tag": "hosting"
   },
   {
+    "title": "The Twelve-Factor App",
+    "url": "https://12factor.net",
+    "summary": "Software is commonly delivered as a service in the modern era: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps.",
+    "tag": "ebook"
+  },
+  {
     "title": "Realtime Colors",
     "url": "https://realtimecolors.com/",
     "summary": "Colors are one of the most important parts of web design/UI design. The Realtime Colors team spend a lot of time trying to figure them out. This tool aims to simplify that process, specifically for web design.",
     "tag": "color"
+  },
+  {
+    "title": "Whirl",
+    "url": "https://whirl.netlify.app/",
+    "summary": "CSS loading animations with minimal effort!",
+    "tag": "tool"
   },
   {
     "title": "Cyclic",

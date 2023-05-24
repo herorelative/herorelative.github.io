@@ -1,9 +1,9 @@
 ﻿<header class="absolute inset-x-0 top-0 z-50">
-    <nav class="w-full flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="mx-auto max-w-7xl flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="" class="-m-1.5 p-1.5">
                 <span class="sr-only">Zar Ni Myo</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <img class="h-9 w-auto" src="logo.png" alt="Zar Ni Myo Logo">
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -14,14 +14,14 @@
                 </svg>
             </button>
         </div>
-        <div class="lg:flex lg:gap-x-12">
+        <div class="lg:flex lg:gap-x-12 sm:hidden">
             <a href="" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
             @*<a href="counter" class="text-sm font-semibold leading-6 text-gray-900">Articles</a>*@
             <a href="about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
             <a href="resources" class="text-sm font-semibold leading-6 text-gray-900">Resources</a>
         </div>
         @*<div class="md:hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="about" class="text-sm font-semibold leading-6 text-gray-900">About <span aria-hidden="true">&rarr;</span></a>
+            <a href="contact" class="text-sm font-semibold leading-6 text-gray-900">Contact <span aria-hidden="true">&rarr;</span></a>
         </div>*@
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
@@ -30,9 +30,9 @@
         <div class="@NavMenuCssClass fixed inset-0 z-50"></div>
         <div class="@NavMenuCssClass fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div class="flex items-center justify-between">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Zar Ni Myo</span>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    <img class="h-8 w-auto" src="logo.png" alt="Zar Ni Myo Logo">
                 </a>
                 <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @onclick="ToggleNavMenu">
                     <span class="sr-only">Close menu</span>
@@ -50,7 +50,7 @@
                         <a href="resources" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" @onclick="ToggleNavMenu">Resources</a>
                     </div>
                     @*<div class="py-6">
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                        <a href="contact" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
                     </div>*@
                 </div>
             </div>
