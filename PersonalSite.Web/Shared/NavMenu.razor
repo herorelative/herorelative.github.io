@@ -14,15 +14,15 @@
                 </svg>
             </button>
         </div>
-        <div class="lg:flex lg:gap-x-12 sm:hidden">
+        <div class="hidden lg:flex lg:gap-x-12">
             <a href="" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
             @*<a href="counter" class="text-sm font-semibold leading-6 text-gray-900">Articles</a>*@
             <a href="about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
             <a href="resources" class="text-sm font-semibold leading-6 text-gray-900">Resources</a>
         </div>
-        @*<div class="md:hidden lg:flex lg:flex-1 lg:justify-end">
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="contact" class="text-sm font-semibold leading-6 text-gray-900">Contact <span aria-hidden="true">&rarr;</span></a>
-        </div>*@
+        </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:@NavMenuCssClass" role="dialog" aria-modal="true">
@@ -49,9 +49,9 @@
                         <a href="about" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" @onclick="ToggleNavMenu">About</a>
                         <a href="resources" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" @onclick="ToggleNavMenu">Resources</a>
                     </div>
-                    @*<div class="py-6">
-                        <a href="contact" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
-                    </div>*@
+                    <div class="py-6">
+                        <a href="contact" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" @onclick="ToggleNavMenu">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>

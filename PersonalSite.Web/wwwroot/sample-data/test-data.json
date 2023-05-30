@@ -18,6 +18,12 @@
     "tag": "color"
   },
   {
+    "title": "IoIcons",
+    "url": "https://ionic.io/ionicons/",
+    "summary": "Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by Ionic.",
+    "tag": "icon"
+  },
+  {
     "title": "Whirl",
     "url": "https://whirl.netlify.app/",
     "summary": "CSS loading animations with minimal effort!",

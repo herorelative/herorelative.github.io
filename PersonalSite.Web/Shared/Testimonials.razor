@@ -6,9 +6,13 @@
             <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
         <div class="mx-auto max-w-2xl py-4 sm:py-24 lg:py-12">
-            <div class="text-center">
+            @*<div class="text-center">
                 <h2 class="text-2xl font-bold tracking-tight text-gray-800 sm:text-4xl mb-3">@Title</h2>
                 <p class="text-2xl leading-8 text-gray-700">@Description</p>
+            </div>*@
+            <div class="text-center mb-4">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-600 sm:text-4xl mb-3">@Title</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">@Description</p>
             </div>
                 <div class="divide-y divide-gray-500\/10">
                     @if (testimonialItems == null)
@@ -19,14 +23,14 @@
                     {
                         @foreach (var item in testimonialItems)
                         {
-                            <div class="card bg-transparent h-38 px-0">
+                        <div class="card bg-transparent shadow-lg rounded-lg h-38 p-6">
                                 <p class="text-left text-lg leading-8 py-4 text-gray-600 group-hover:bg-primary">@item.Testimonial</p>
                                 <div class="flex flex-1 flex-col">
                                     <h3 class="block text-2xl font-bold text-dark py-2">@item.Name</h3>
                                     @*<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                     </svg>*@
-                                    <div class="pb-6 flex flex-wrap gap-2">
+                                    <div class="flex flex-wrap gap-2">
                                         <p class="text-[14px] text-blue">@item.Designation of @item.Company</p>
                                     </div>
                                 </div>
