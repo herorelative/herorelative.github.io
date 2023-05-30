@@ -1,0 +1,23 @@
+[
+  {
+    "testimonial": "Zar Ni has been a valued member of the GetGo team. He has brought with him decades of notable experience and a wealth of knowledge that has helped kickstart the development team into a steady workstream. He has shown a professional attitude and provided the team with numerous technical guidance which is invaluable to our growth. Grit drives him forward to solve even the most complex of problems. Whilst working with us, he was responsible for engineering our backend systems looking at its fullstack architecture. He has delivered all of his sprints with almost zero deployment incidents, which is highly commendable. Zar Ni is also a very pleasant person to speak to and have as a team member. He is polite yet straightforward and is very easy to work with. He would always contribute his knowledge beyond his working parameters to help others navigate through their issues. Without a doubt, he is a great addition to any team.",
+    "name": "Malik Badaruddin",
+    "designation": "CTO",
+    "company": "GetGo Carsharing",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+    "testimonial": "Zar Ni has proven to be a reliable, resourceful and experienced developer. Always keen to offer solutions, providing flexibility to stake holders decision making process. His passion for his craft can be clearly seen in his work. Displaying great leadership skills and is an excellent team member. It was an enjoyable experience working with him and I look forward other collaborations in future.",
+    "name": "Han Goh",
+    "designation": "Product Owner/Manager",
+    "company": "Global United Source",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "testimonial": "Zar Ni is an outstanding consultant and developer who continuously exceeds the expectations, willingly accepts challenge, he is one of the most talented software developer with huge knowledge. The best thing I noticed in him is his great enthusiasm to learn latest technical skill, technology stacks and tools and offer better solutions!",
+    "name": "Arjun Gimire",
+    "designation": "Managing Director",
+    "company": "TRAVZEE TRAVEL & TOURS",
+    "image": "https://randomuser.me/api/portraits/women/6.jpg"
+  }
+]
