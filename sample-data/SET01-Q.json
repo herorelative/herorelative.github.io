@@ -1,0 +1,902 @@
+[
+  {
+    "id": "Q01",
+    "type": "single",
+    "question": "What advantages does a database administrator obtain by using the Amazon Relational Database Service (RDS)?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "RDS provides 99.99999999999% reliability and durability."
+      },
+      {
+        "key": "2",
+        "value": "RDS databases automatically scale based on load."
+      },
+      {
+        "key": "3",
+        "value": "RDS enables users to dynamically adjust CPU and RAM resources."
+      },
+      {
+        "key": "4",
+        "value": "RDS simplifies relational database administration tasks."
+      }
+    ],
+    "answers": [ "4" ],
+    "explanation": "Amazon RDS is a managed relational database service on which you can run several types of database software. The service is managed so this reduces the database administration tasks an administrator would normally undertake. The managed service includes hardware provisioning, database setup, patching and backups.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'RDS simplifies relational database administration tasks' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS databases automatically scale based on load' is incorrect. This is not true, storage auto scaling is possible but for compute it scales by changing instance type (manual)."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS provides 99.99999999999% reliability and durability' is incorrect. This is not true of Amazon RDS."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS enables users to dynamically adjust CPU and RAM resources' is incorrect. You cannot adjust CPU and RAM dynamically, you must change the instance type and reboot the database instance."
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "type": "single",
+    "question": "A Cloud Practitioner requires point-in-time recovery (PITR) for an Amazon DynamoDB table. Who is responsible for configuring and performing backups?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "AWS is responsible for both tasks."
+      },
+      {
+        "key": "2",
+        "value": "The customer is responsible for configuring and AWS is responsible for performing backups."
+      },
+      {
+        "key": "3",
+        "value": "The customer is responsible for both tasks."
+      },
+      {
+        "key": "4",
+        "value": "AWS is responsible for configuring and the user is responsible for performing backups."
+      }
+    ],
+    "answers": [ "2" ],
+    "explanation": "Point-in-time recovery (PITR) provides continuous backups of your DynamoDB table data. When enabled, DynamoDB maintains incremental backups of your table for the last 35 days until you explicitly turn it off. It is a customer responsibility to enable PITR on and AWS is responsible for actually performing the backups.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'The customer is responsible for configuring and AWS is responsible for performing backups' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS is responsible for configuring and the user is responsible for performing backups' is incorrect. This is backwards, users are responsible for configuring and AWS is responsible for performing backups."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS is responsible for both tasks' is incorrect. This is not true as users must configure PITR."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'The customer is responsible for both tasks' is incorrect. This is not true, AWS perform the backups."
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "type": "single",
+    "question": "A large company is interested in avoiding long-term contracts and moving from fixed costs to variable costs. What is the value proposition of AWS for this company?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Economies of scale"
+      },
+      {
+        "key": "2",
+        "value": "Pay-as-you-go pricing"
+      },
+      {
+        "key": "3",
+        "value": "Volume pricing discounts"
+      },
+      {
+        "key": "4",
+        "value": "Automated cost optimization"
+      }
+    ],
+    "answers": [ "2" ],
+    "explanation": "Pay-as-you-go pricing helps companies move away from fixed costs to variable costs in a model in which they only pay for what they actually use. There are no fixed term contracts with AWS so that requirement is also met.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Pay-as-you-go pricing' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Economies of scale' is incorrect. You do get good pricing because of the economies of scale leveraged by AWS. However, the value proposition for companies wishing to avoid fixed costs is pay-as-you-go pricing. This flexibility can be more important in some cases than the actual cost per unit."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Volume pricing discounts' is incorrect. This is not the value proposition for this company as they are seeking to avoid long-term contracts and fixed costs, not to achieve a discount."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Automated cost optimization' is incorrect. This is a not a feature that relates to the value proposition for this customer."
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "type": "single",
+    "question": "A customer needs to determine Total Cost of Ownership (TCO) for a workload that requires physical isolation. Which hosting model should be accounted for?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Dedicated Hosts"
+      },
+      {
+        "key": "2",
+        "value": "Reserved Instances"
+      },
+      {
+        "key": "3",
+        "value": "On-Demand Instances"
+      },
+      {
+        "key": "4",
+        "value": "Spot Instances"
+      }
+    ],
+    "answers": [ "1" ],
+    "explanation": "<p>An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses, including Windows Server, Microsoft SQL Server, SUSE, and Linux Enterprise Server.</p><p>Note that dedicated hosts can be considered “hosting model” as it determines that actual underlying infrastructure that is used for running your workload. All of the other answers are simply pricing plans for shared hosting models.</p>",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Dedicated Hosts' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Reserved Instances' is incorrect. This hosting model does not support physical isolation."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'On-Demand Instances' is incorrect. This hosting model does not support physical isolation."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Spot Instances' is incorrect. This hosting does not support physical isolation."
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "type": "multi",
+    "question": "Which tasks can a user complete using the AWS Cost Management tools? (Select TWO.)",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Automatically terminate AWS resources if budget thresholds are exceeded."
+      },
+      {
+        "key": "2",
+        "value": "Break down AWS costs by day, service, and linked AWS account."
+      },
+      {
+        "key": "3",
+        "value": "Create budgets and receive notifications if current or forecasted usage exceeds the budgets."
+      },
+      {
+        "key": "4",
+        "value": "Launch either EC2 Spot instances or On-Demand instances based on the current pricing."
+      },
+      {
+        "key": "5",
+        "value": "Move data stored in Amazon S3 Standard to an archiving storage class to reduce cost."
+      }
+    ],
+    "answers": [ "2", "3" ],
+    "explanation": "The AWS Cost Management tools includes services, tools, and resources to organize and track cost and usage data, enhance control through consolidated billing and access permissions, enable better planning through budgeting and forecasts, and further lower costs with resources and pricing optimizations.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Break down AWS costs by day, service, and linked AWS account' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'Create budgets and receive notifications if current or forecasted usage exceeds the budgets' is also the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Automatically terminate AWS resources if budget thresholds are exceeded' is incorrect. The cost management tools will not do this for you but they could generate an alert which could be processed by another service to terminate resources."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch either EC2 Spot instances or On-Demand instances based on the current pricing' is incorrect. The cost management tools do not integrate with the tools used to launch EC2 instances and cannot choose the best pricing plan."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Move data stored in Amazon S3 Standard to an archiving storage class to reduce cost' is incorrect. This is performed using lifecycle management in Amazon S3, it is not a task performed by cost management tools."
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "type": "multi",
+    "question": "Which of the following AWS services are compute services? (Select TWO.)",
+    "choices": [
+      {
+        "key": "1",
+        "value": "AWS Batch"
+      },
+      {
+        "key": "2",
+        "value": "AWS CloudTrail"
+      },
+      {
+        "key": "3",
+        "value": "AWS Elastic Beanstalk"
+      },
+      {
+        "key": "4",
+        "value": "Amazon EFS"
+      },
+      {
+        "key": "5",
+        "value": "Amazon Inspector"
+      }
+    ],
+    "answers": [ "1", "3" ],
+    "explanation": "<p>AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS.</p><p>AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.</p>",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'AWS Batch' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'AWS Elastic Beanstalk' is also the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS CloudTrail' is incorrect. CloudTrail is used for auditing."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon EFS' is incorrect. The Elastic File System (EFS) is used for storing data and is mounted by EC2 instances."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon Inspector' is incorrect. Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS."
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "type": "multi",
+    "question": "Which design principles are enabled by the AWS Cloud to improve the operation of workloads? (Select TWO.)",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Minimize platform design"
+      },
+      {
+        "key": "2",
+        "value": "Loose coupling"
+      },
+      {
+        "key": "3",
+        "value": "Customized hardware"
+      },
+      {
+        "key": "4",
+        "value": "Remove single points of failure"
+      },
+      {
+        "key": "5",
+        "value": "Minimum viable product"
+      }
+    ],
+    "answers": [ "2", "4" ],
+    "explanation": "<p>Loose coupling is when you break systems down into smaller components that are loosely coupled together. This reduces interdependencies between systems components. This is achieved in the cloud using messages buses, notification and messaging services.</p><p>Removing single points of failure ensures fault tolerance and high availability. This is easily achieved in the cloud as the architecture and features of the cloud support the implementation of highly available and fault tolerant systems.</p>",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Loose coupling' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'Remove single points of failure' is also the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Customized hardware' is incorrect. You cannot customize hardware in the cloud."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Minimize platform design' is incorrect. This is not an operational advantage for workloads in the cloud."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Minimum viable product' is incorrect. This is not an operational advantage for workloads in the cloud."
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "type": "single",
+    "question": "A user is planning to launch three EC2 instances behind a single Elastic Load Balancer. The deployment should be highly available.",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Launch the instances across multiple Availability Zones in a single AWS Region."
+      },
+      {
+        "key": "2",
+        "value": "Launch the instances as EC2 Spot Instances in the same AWS Region and the same Availability Zone."
+      },
+      {
+        "key": "3",
+        "value": "Launch the instances in multiple AWS Regions, and use Elastic IP addresses."
+      },
+      {
+        "key": "4",
+        "value": "Launch the instances as EC2 Reserved Instances in the same AWS Region, but in different Availability Zones."
+      }
+    ],
+    "answers": [ "1"],
+    "explanation": "To make the deployment highly available the user should launch the instances across multiple Availability Zones in a single AWS Region. Elastic Load Balancers can only serve targets in a single Region so it is not possible to deploy across Regions.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Launch the instances across multiple Availability Zones in a single AWS Region' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch the instances as EC2 Spot Instances in the same AWS Region and the same Availability Zone' is incorrect. The pricing model is not relevant to high availability and deploying in a single AZ does not result in a highly available deployment."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch the instances in multiple AWS Regions, and use Elastic IP addresses' is incorrect. You cannot use an ELB with instances in multiple Regions and using an EIP does not help."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch the instances as EC2 Reserved Instances in the same AWS Region, but in different Availability Zones' is incorrect. Using reserved instances may not be appropriate as we do not know whether this is going to be a long-term workload or not."
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "type": "single",
+    "question": "Which resource should a new user on AWS use to get help with deploying popular technologies based on AWS best practices, including architecture and deployment instructions?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "AWS CloudFormation"
+      },
+      {
+        "key": "2",
+        "value": "AWS Artifact"
+      },
+      {
+        "key": "3",
+        "value": "AWS Config"
+      },
+      {
+        "key": "4",
+        "value": "AWS Quick Starts"
+      }
+    ],
+    "answers": [ "4"],
+    "explanation": "<p>Quick Starts are built by Amazon Web Services (AWS) solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability. These accelerators reduce hundreds of manual procedures into just a few steps, so you can build your production environment quickly and start using it immediately.</p><p>Each Quick Start includes AWS CloudFormation templates that automate the deployment and a guide that discusses the architecture and provides step-by-step deployment instructions.</p>",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'AWS Quick Starts' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS CloudFormation' is incorrect. CloudFormation is used to deploy infrastructure from templates, the Quick Starts use CloudFormation."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS Artifact' is incorrect. Artifact provides on-demand access to AWS security and compliance reports."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS Config' is incorrect. Config is a service used for compliance relating the configuration of AWS resources."
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "type": "single",
+    "question": "A company needs to publish messages to a thousands of subscribers simultaneously using a push mechanism. Which AWS service should the company use?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "AWS Step Functions"
+      },
+      {
+        "key": "2",
+        "value": "Amazon Simple Workflow Service (SWF)"
+      },
+      {
+        "key": "3",
+        "value": "Amazon Simple Notification Service (Amazon SNS)"
+      },
+      {
+        "key": "4",
+        "value": "Amazon Simple Queue Service (Amazon SQS)"
+      }
+    ],
+    "answers": [ "3"],
+    "explanation": "Amazon SNS is a publisher/subscriber notification service that uses a push mechanism to publish messages to multiple subscribers. Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP).",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Amazon Simple Notification Service (Amazon SNS)' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon Simple Queue Service (Amazon SQS)' is incorrect. SQS is a message queue service used for decoupling applications."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon Simple Workflow Service (SWF)' is incorrect. SWF is a workflow orchestration service, not a messaging service."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS Step Functions' is incorrect. AWS Step Functions is a serverless workflow orchestration service for modern applications."
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "type": "single",
+    "question": "A company uses Amazon EC2 instances to run applications that are dedicated to different departments. The company needs to break out the costs of these applications and allocate them to the relevant department. The EC2 instances run in a single VPC. How can the company achieve these requirements?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Enable billing access for IAM users and view the costs in Cost Explorer."
+      },
+      {
+        "key": "2",
+        "value": "Enable billing alerts through Amazon CloudWatch and Amazon SNS."
+      },
+      {
+        "key": "3",
+        "value": "Create tags by department on the instances and then run a cost allocation report."
+      },
+      {
+        "key": "4",
+        "value": "Add additional Amazon VPCs and launch each application in a separate VPC."
+      }
+    ],
+    "answers": [ "3"],
+    "explanation": "The company should create cost allocation tags that specify the department and assign them to resources. These tags must be activated so they are visible in the cost allocation report.  Once this is done and a monthly cost allocation report has been configured it will be easy to monitor the costs for each department.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Create tags by department on the instances and then run a cost allocation report' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Enable billing access for IAM users and view the costs in Cost Explorer' is incorrect. Cost explorer will not show a breakdown of the costs by department."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Enable billing alerts through Amazon CloudWatch and Amazon SNS' is incorrect. A billing alert simply lets you know you have reached a cost threshold."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Add additional Amazon VPCs and launch each application in a separate VPC' is incorrect. This will not help as billing is not broken out by VPC so they will not be able to determine the costs per department using this method."
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "type": "single",
+    "question": "An application uses a PostgreSQL database running on a single Amazon EC2 instance. A Cloud Practitioner has been asked to increase the availability of the database so there is automatic recovery in the case of a failure. Which tasks can the Cloud Practitioner take to meet this requirement?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Migrate the database to Amazon RDS and enable the Multi-AZ feature."
+      },
+      {
+        "key": "2",
+        "value": "Configure an Elastic Load Balancer in front of the EC2 instance."
+      },
+      {
+        "key": "3",
+        "value": "Configure EC2 Auto Recovery to move the instance to another Region."
+      },
+      {
+        "key": "4",
+        "value": "Set the DeleteOnTermination value to false for the EBS root volume."
+      }
+    ],
+    "answers": [ "1"],
+    "explanation": "Moving the database to Amazon RDS means that the database can take advantage of the built-in Multi-AZ feature. This feature creates a standby instance in another Availability Zone and synchronously replicates to it. In the event of a failure that affects the primary database an automatic failover can occur and the database will become functional on the standby instance.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Migrate the database to Amazon RDS and enable the Multi-AZ feature' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Configure an Elastic Load Balancer in front of the EC2 instance' is incorrect. You cannot use an ELB to distribute traffic to a database and with a single instance there’s no benefit here at all."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Configure EC2 Auto Recovery to move the instance to another Region' is incorrect. The auto recovery feature of EC2 automatically moves the instance to another host, not to another Region."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Set the DeleteOnTermination value to false for the EBS root volume' is incorrect. This will simply preserve the root volume; it will not perform automatic recovery."
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "type": "single",
+    "question": "A company is launching a new website which is expected to have highly variable levels of traffic. The website will run on Amazon EC2 and must be highly available. What is the MOST cost-effective approach?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Use the AWS CLI to launch and terminate Amazon EC2 instances to match demand."
+      },
+      {
+        "key": "2",
+        "value": "Create an Amazon EC2 Auto Scaling group and configure an Elastic Load Balancer."
+      },
+      {
+        "key": "3",
+        "value": "Determine the highest expected traffic and use an appropriate instance type."
+      },
+      {
+        "key": "4",
+        "value": "Launch the website using an Amazon EC2 instance running on a dedicated host."
+      }
+    ],
+    "answers": [ "2"],
+    "explanation": "The most cost-effective approach for ensuring the website is highly available on Amazon EC2 instances is to use an Auto Scaling group. This will ensure that the appropriate number of instances is always available to service the demand. An Elastic Load Balancer can be placed in front of the instances to distribute incoming connections.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Create an Amazon EC2 Auto Scaling group and configure an Elastic Load Balancer' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Use the AWS CLI to launch and terminate Amazon EC2 instances to match demand' is incorrect. This is a manual approach and would not be recommended."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Determine the highest expected traffic and use an appropriate instance type' is incorrect. This approach will result in the company overpaying when the demand is low."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch the website using an Amazon EC2 instance running on a dedicated host' is incorrect. This is an expensive solution as dedicated hosts are very costly and should only be used when physical isolation of resources or host visibility is required."
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "type": "multi",
+    "question": "Which of the following statements best describes the concept of agility in relation to cloud computing on AWS? (Select TWO.)",
+    "choices": [
+      {
+        "key": "1",
+        "value": "The speed at which AWS rolls out new features."
+      },
+      {
+        "key": "2",
+        "value": "The ability to experiment quickly."
+      },
+      {
+        "key": "3",
+        "value": "The elimination of wasted capacity."
+      },
+      {
+        "key": "4",
+        "value": "The ability to automatically scale capacity."
+      },
+      {
+        "key": "5",
+        "value": "The speed at which AWS resources can be created."
+      }
+    ],
+    "answers": [ "2","5" ],
+    "explanation": "In a cloud computing environment, new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes. This results in a dramatic increase in agility for the organization, since the cost and time it takes to experiment and develop is significantly lower.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'The ability to experiment quickly' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'The speed at which AWS resources can be created' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'The speed at which AWS rolls out new features' is incorrect. This is not a statement that describes agility."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'The elimination of wasted capacity' is incorrect. This is also known as right-sizing and it is a cost benefit of running in the cloud. It is not a statement that describes agility."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'The ability to automatically scale capacity' is incorrect. Auto scaling ensures you have the right amount of capacity available."
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "type": "single",
+    "question": "A company runs a batch job on an Amazon EC2 instance and it takes 6 hours to complete. The workload is expected to double in volume each month with a proportional increase in processing time. What is the most efficient cloud architecture to address the growing workload?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Run the batch job on a larger Amazon EC2 instance type with more CPU."
+      },
+      {
+        "key": "2",
+        "value": "Change the Amazon EC2 volume type to a Provisioned IOPS SSD volume."
+      },
+      {
+        "key": "3",
+        "value": "Run the application on a bare metal Amazon EC2 instance."
+      },
+      {
+        "key": "4",
+        "value": "Run the batch workload in parallel across multiple Amazon EC2 instances."
+      }
+    ],
+    "answers": [ "4" ],
+    "explanation": "The most efficient option is to use multiple EC2 instances and distribute the workload across them. This is an example of horizontal scaling and will allow the workload to keep growing in size without any issue and without increasing the overall processing timeframe.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Run the batch workload in parallel across multiple Amazon EC2 instances' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Run the batch job on a larger Amazon EC2 instance type with more CPU' is incorrect. This may help initially but over time this will not scale well and the workload will take many days to complete."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Change the Amazon EC2 volume type to a Provisioned IOPS SSD volume' is incorrect. This will improve the underlying performance of the EBS volume but does not assist with processing (more CPU is needed, i.e. by spreading across instances)."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Run the application on a bare metal Amazon EC2 instance' is incorrect. Bare metal instances are used for workloads that require access to the hardware feature set (such as Intel VT-x), for applications that need to run in non-virtualized environments for licensing or support requirements, or for customers who wish to use their own hypervisor."
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "type": "single",
+    "question": "An individual IAM user must be granted access to an Amazon S3 bucket using a bucket policy. Which element in the S3 bucket policy should be updated to define the user account for which access will be granted?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Action"
+      },
+      {
+        "key": "2",
+        "value": "Principal"
+      },
+      {
+        "key": "3",
+        "value": "Resource"
+      },
+      {
+        "key": "4",
+        "value": "Condition"
+      }
+    ],
+    "answers": [ "2" ],
+    "explanation": "The Principal element specifies the user, account, service, or other entity that is allowed or denied access to a resource. The bucket policy below has a Principal element set to * which is a wildcard meaning any user. To grant access to a specific IAM user the following format can be used: 'Principal': {'AWS':'arn:aws:iam::AWSACCOUNTNUMBER:user/username'}",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Principal' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Action' is incorrect. Actions are the permissions that you can specify in a policy."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Resource' is incorrect. Resources are the ARNs of resources you wish to specify permissions for."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Condition' is incorrect. Conditions define certain conditions to apply when granting permissions such as the source IP address of the caller."
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "type": "single",
+    "question": "A Cloud Practitioner needs a tool that can assist with viewing and managing AWS costs and usage over time. Which tool should the Cloud Practitioner use?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "AWS Budgets"
+      },
+      {
+        "key": "2",
+        "value": "Amazon Inspector"
+      },
+      {
+        "key": "3",
+        "value": "AWS Organizations"
+      },
+      {
+        "key": "4",
+        "value": "AWS Cost Explorer"
+      }
+    ],
+    "answers": [ "4" ],
+    "explanation": "AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time. AWS Cost Explorer provides you with a set of default reports that you can use as the starting place for your analysis. From there, use the filtering and grouping capabilities to dive deeper into your cost and usage data and generate custom insights.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'AWS Cost Explorer' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS Budgets' is incorrect. AWS Budgets allows you to set custom budgets to track your cost and usage from the simplest to the most complex use cases."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon Inspector' is incorrect. Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS Organizations' is incorrect. AWS Organizations allows you to organize accounts, create accounts programmatically, and leverage consolidated billing."
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "type": "single",
+    "question": "A company plans to deploy a relational database on AWS. The IT department will perform database administration. Which service should the company use?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Amazon EC2"
+      },
+      {
+        "key": "2",
+        "value": "Amazon RedShift"
+      },
+      {
+        "key": "3",
+        "value": "Amazon ElastiCache"
+      },
+      {
+        "key": "4",
+        "value": "Amazon DynamoDB"
+      }
+    ],
+    "answers": [ "1" ],
+    "explanation": "A self-managed relational database can be installed on Amazon EC2. When using this deployment you can choose the operating system and instance type that suits your needs and then install and manage any database software you require.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Amazon EC2' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon RedShift' is incorrect. RedShift is managed data warehouse solution and is better suited to use cases where analytics of data is required."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon ElastiCache' is incorrect. ElastiCache is a managed service for in-memory, high-performance caching of database content."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Amazon DynamoDB' is incorrect. DynamoDB is a non-relational (NoSQL) type of database."
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "type": "single",
+    "question": "A company is planning to move a number of legacy applications to the AWS Cloud. The solution must be cost-effective. Which approach should the company take?",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Migrate the applications to dedicated hosts on Amazon EC2."
+      },
+      {
+        "key": "2",
+        "value": "Rehost the applications on Amazon EC2 instances that are right-sized."
+      },
+      {
+        "key": "3",
+        "value": "Use AWS Lambda to host the legacy applications in the cloud."
+      },
+      {
+        "key": "4",
+        "value": "Use an Amazon S3 static website to host the legacy application code."
+      }
+    ],
+    "answers": [ "2" ],
+    "explanation": "The most cost-effective solution that works is to use Amazon EC2 instances that are right-sized with the most optimum instance types. Right-sizing is the process of ensuring that the instance type selected for each application provides the right amount of resources for the application.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Rehost the applications on Amazon EC2 instances that are right-sized' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Migrate the applications to dedicated hosts on Amazon EC2' is incorrect. Dedicated hosts are expensive and there is no need to use them with this solution."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Use AWS Lambda to host the legacy applications in the cloud' is incorrect. It is unlikely that you can simply host legacy applications using AWS Lambda."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Use an Amazon S3 static website to host the legacy application code' is incorrect. You cannot host legacy application code in an S3 static website, only static content is possible."
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "type": "multi",
+    "question": "A company must provide access to AWS resources for their employees. Which security practices should they follow? (Select TWO.)",
+    "choices": [
+      {
+        "key": "1",
+        "value": "Enable multi-factor authentication for users."
+      },
+      {
+        "key": "2",
+        "value": "Create IAM policies based on least privilege principles."
+      },
+      {
+        "key": "3",
+        "value": "Disable password policies and management console access."
+      },
+      {
+        "key": "4",
+        "value": "Create IAM users in different AWS Regions."
+      },
+      {
+        "key": "5",
+        "value": "Create IAM Roles and apply them to IAM groups."
+      }
+    ],
+    "answers": [ "1","2" ],
+    "explanation": "There are a several security best practices for AWS IAM that are listed in the document shared below. Enabling multi-factor authentication is a best practice to require a second factor of authentication when logging in. Another best practice is to grant least privilege access when configuring users and password policies.",
+    "diff": [
+      {
+        "key": "CORRECT",
+        "value": "'Enable multi-factor authentication for users' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'Create IAM policies based on least privilege principles' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Disable password policies and management console access' is incorrect. This is not a security best practice. There is no need to disable management console access and password policies should be used."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Create IAM users in different AWS Regions' is incorrect. You cannot create IAM users in different Regions as the IAM service is a global service."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Create IAM Roles and apply them to IAM groups' is incorrect. You cannot apply roles to groups, you apply policies to groups."
+      }
+    ]
+  }
+]

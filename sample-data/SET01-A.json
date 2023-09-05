@@ -1,0 +1,121 @@
+[
+  {
+    "id": "Q01",
+    "answers": [ "4" ],
+    "explanation": "Amazon RDS is a managed relational database service on which you can run several types of database software. The service is managed so this reduces the database administration tasks an administrator would normally undertake. The managed service includes hardware provisioning, database setup, patching and backups.",
+    "choices": [
+      {
+        "key": "CORRECT",
+        "value": "'RDS simplifies relational database administration tasks' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS databases automatically scale based on load' is incorrect. This is not true, storage auto scaling is possible but for compute it scales by changing instance type (manual)."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS provides 99.99999999999% reliability and durability' is incorrect. This is not true of Amazon RDS."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'RDS enables users to dynamically adjust CPU and RAM resources' is incorrect. You cannot adjust CPU and RAM dynamically, you must change the instance type and reboot the database instance."
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "answers": [ "2" ],
+    "explanation": "Point-in-time recovery (PITR) provides continuous backups of your DynamoDB table data. When enabled, DynamoDB maintains incremental backups of your table for the last 35 days until you explicitly turn it off. It is a customer responsibility to enable PITR on and AWS is responsible for actually performing the backups.",
+    "choices": [
+      {
+        "key": "CORRECT",
+        "value": "'The customer is responsible for configuring and AWS is responsible for performing backups' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS is responsible for configuring and the user is responsible for performing backups' is incorrect. This is backwards, users are responsible for configuring and AWS is responsible for performing backups."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'AWS is responsible for both tasks' is incorrect. This is not true as users must configure PITR."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'The customer is responsible for both tasks' is incorrect. This is not true, AWS perform the backups."
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "answers": [ "2" ],
+    "explanation": "Pay-as-you-go pricing helps companies move away from fixed costs to variable costs in a model in which they only pay for what they actually use. There are no fixed term contracts with AWS so that requirement is also met.",
+    "choices": [
+      {
+        "key": "CORRECT",
+        "value": "'Pay-as-you-go pricing' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Economies of scale' is incorrect. You do get good pricing because of the economies of scale leveraged by AWS. However, the value proposition for companies wishing to avoid fixed costs is pay-as-you-go pricing. This flexibility can be more important in some cases than the actual cost per unit."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Volume pricing discounts' is incorrect. This is not the value proposition for this company as they are seeking to avoid long-term contracts and fixed costs, not to achieve a discount."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Automated cost optimization' is incorrect. This is a not a feature that relates to the value proposition for this customer."
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "answers": [ "1" ],
+    "explanation": "<p>An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses, including Windows Server, Microsoft SQL Server, SUSE, and Linux Enterprise Server.</p><p>Note that dedicated hosts can be considered “hosting model” as it determines that actual underlying infrastructure that is used for running your workload. All of the other answers are simply pricing plans for shared hosting models.</p>",
+    "choices": [
+      {
+        "key": "CORRECT",
+        "value": "'Dedicated Hosts' is the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Reserved Instances' is incorrect. This hosting model does not support physical isolation."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'On-Demand Instances' is incorrect. This hosting model does not support physical isolation."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Spot Instances' is incorrect. This hosting does not support physical isolation."
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "answers": [ "2","3" ],
+    "explanation": "The AWS Cost Management tools includes services, tools, and resources to organize and track cost and usage data, enhance control through consolidated billing and access permissions, enable better planning through budgeting and forecasts, and further lower costs with resources and pricing optimizations.",
+    "choices": [
+      {
+        "key": "CORRECT",
+        "value": "'Break down AWS costs by day, service, and linked AWS account' is the correct answer."
+      },
+      {
+        "key": "CORRECT",
+        "value": "'Create budgets and receive notifications if current or forecasted usage exceeds the budgets' is also the correct answer."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Automatically terminate AWS resources if budget thresholds are exceeded' is incorrect. The cost management tools will not do this for you but they could generate an alert which could be processed by another service to terminate resources."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Launch either EC2 Spot instances or On-Demand instances based on the current pricing' is incorrect. The cost management tools do not integrate with the tools used to launch EC2 instances and cannot choose the best pricing plan."
+      },
+      {
+        "key": "INCORRECT",
+        "value": "'Move data stored in Amazon S3 Standard to an archiving storage class to reduce cost' is incorrect. This is performed using lifecycle management in Amazon S3, it is not a task performed by cost management tools."
+      }
+    ]
+  }
+]
