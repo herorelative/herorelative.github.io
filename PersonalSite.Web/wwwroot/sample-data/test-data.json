@@ -1,9 +1,21 @@
 [
   {
-    "title": "appwrite",
+    "title": "PocketBase",
+    "url": "https://pocketbase.io/",
+    "summary": "Open Source backend for your next SaaS and Mobile app in 1 file",
+    "tag": "BaaS"
+  },
+  {
+    "title": "Appwrite",
     "url": "https://appwrite.io",
     "summary": "Appwrite is a secure, open-source backend that abstracts the complexity of common, complex, and repetitive tasks required for building a modern app. Appwrite provides you with a set of secure APIs, tools, and a management console UI to help you build your apps quickly without compromising security. Use Appwrite to add user authentication and management, data and file storage, run server-side code, image manipulation, localization, and more into your apps.",
-    "tag": "hosting"
+    "tag": "BaaS"
+  },
+  {
+    "title": "Glaze",
+    "url": "https://www.glazestock.com/",
+    "summary": "Curated royalty-free illustration library for everything.",
+    "tag": "illustrations"
   },
   {
     "title": "The Twelve-Factor App",
@@ -18,7 +30,7 @@
     "tag": "color"
   },
   {
-    "title": "IoIcons",
+    "title": "IonIcons",
     "url": "https://ionic.io/ionicons/",
     "summary": "Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font. Completely open source, MIT licensed and built by Ionic.",
     "tag": "icon"
@@ -42,10 +54,10 @@
     "tag": "ebook"
   },
   {
-    "title": "supabase",
+    "title": "Supabase",
     "url": "https://supabase.com",
     "summary": "Supabase is an open source Firebase alternative for building secure and performant Postgres backends with minimal configuration.",
-    "tag": "hosting"
+    "tag": "BaaS"
   },
   {
     "title": "Shape Up",
@@ -60,7 +72,7 @@
     "tag": "icon"
   },
   {
-    "title": "MockAPI I/O",
+    "title": "MockAPI",
     "url": "https://mockapi.io",
     "summary": "The easiest way to mock REST APIs, Quickly setup endpoints, generate custom data, and preform operations on it using RESTful interface.",
     "tag": "api"

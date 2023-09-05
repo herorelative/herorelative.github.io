@@ -1,4 +1,4 @@
-﻿@inject HttpClient Http
+﻿@inject IStaticFileService _http
 
 <div class="bg-white">
     <div class="relative isolate px-3 pt-4 lg:px-8">
@@ -48,26 +48,10 @@
     [Parameter]
     public string? Description { get; set; }
 
-    [Parameter]
-    public string? Path { get; set; }
-
     private ExperienceItem[]? resourceItems;
 
     protected override async Task OnInitializedAsync()
     {
-        resourceItems = await Http.GetFromJsonAsync<ExperienceItem[]>(Path);
-    }
-
-    public class ExperienceItem
-    {
-        public string? Company { get; set; }
-
-        public string? Title { get; set; }
-
-        public string? From { get; set; }
-
-        public string? To { get; set; }
-
-        public string? Description { get; set; }
+        resourceItems = await _http.GetExperienceAsync();
     }
 }

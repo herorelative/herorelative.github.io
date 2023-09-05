@@ -1,4 +1,4 @@
-﻿@inject HttpClient Http
+﻿@inject IStaticFileService _http
 
 <div class="bg-white">
     <div class="relative isolate px-3 pt-4 lg:px-8">
@@ -24,7 +24,7 @@
                         @foreach (var item in testimonialItems)
                         {
                         <div class="card bg-transparent shadow-lg rounded-lg h-38 p-6">
-                                <p class="text-left text-lg leading-8 py-4 text-gray-600 group-hover:bg-primary">@item.Testimonial</p>
+                                <p class="text-left text-lg leading-8 py-4 text-gray-600 group-hover:bg-primary">@((MarkupString)item.Testimonial)</p>
                                 <div class="flex flex-1 flex-col">
                                     <h3 class="block text-2xl font-bold text-dark py-2">@item.Name</h3>
                                     @*<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -52,24 +52,10 @@
     [Parameter]
     public string? Description { get; set; }
 
-    [Parameter]
-    public string? Path { get; set; }
-
     private TestimonialItem[]? testimonialItems;
 
     protected override async Task OnInitializedAsync()
     {
-        testimonialItems = await Http.GetFromJsonAsync<TestimonialItem[]>(Path);
-    }
-
-    public class TestimonialItem
-    {
-        public string? Testimonial { get; set; }
-
-        public string? Name { get; set; }
-
-        public string? Designation { get; set; }
-
-        public string? Company { get; set; }
+        testimonialItems = await _http.GetTestimonialAsync();
     }
 }

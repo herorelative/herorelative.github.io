@@ -1,6 +1,6 @@
 [
   {
-    "testimonial": "Zar Ni has been a valued member of the GetGo team. He has brought with him decades of notable experience and a wealth of knowledge that has helped kickstart the development team into a steady workstream. He has shown a professional attitude and provided the team with numerous technical guidance which is invaluable to our growth. Grit drives him forward to solve even the most complex of problems. Whilst working with us, he was responsible for engineering our backend systems looking at its fullstack architecture. He has delivered all of his sprints with almost zero deployment incidents, which is highly commendable. Zar Ni is also a very pleasant person to speak to and have as a team member. He is polite yet straightforward and is very easy to work with. He would always contribute his knowledge beyond his working parameters to help others navigate through their issues. Without a doubt, he is a great addition to any team.",
+    "testimonial": "Zar Ni has been a valued member of the GetGo team. He has brought with him decades of notable experience and a wealth of knowledge that has helped kickstart the development team into a steady workstream. He has shown a professional attitude and provided the team with numerous technical guidance which is invaluable to our growth. Grit drives him forward to solve even the most complex of problems. <br /><br />Whilst working with us, he was responsible for engineering our backend systems looking at its fullstack architecture. He has delivered all of his sprints with almost zero deployment incidents, which is highly commendable. <br /><br />Zar Ni is also a very pleasant person to speak to and have as a team member. He is polite yet straightforward and is very easy to work with. He would always contribute his knowledge beyond his working parameters to help others navigate through their issues. Without a doubt, he is a great addition to any team.",
     "name": "Malik Badaruddin",
     "designation": "CTO",
     "company": "GetGo Carsharing",
@@ -18,6 +18,13 @@
     "name": "Arjun Gimire",
     "designation": "Managing Director",
     "company": "TRAVZEE TRAVEL & TOURS",
+    "image": "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+    "testimonial": "Zar Ni Myo's tenure with our organization was characterized by exceptional dedication and proficiency in his role. As a Senior Co-Developer, he demonstrated exceptional technical skills and contributed significantly to the development and implementation of various projects. Additionally, as an IGCSE ICT Lecturer, he imparted his knowledge and expertise to our students, making a positive impact on their learning journey.<br /><br />Throughout his employment, Zar Ni Myo displayed a strong work ethic, consistently delivering high-quality work and meeting deadlines. His passion for his field of expertise was evident in his commitment to continuous learning and staying up-to-date with industry trends.<br /><br />Zar Ni Myo's collaborative nature and excellent communication skills made him an invaluable asset to our team. He fostered a positive and inclusive work environment, inspiring his colleagues and students alike.",
+    "name": "U Myo Myint",
+    "designation": "Managing Director",
+    "company": "MLA International School",
     "image": "https://randomuser.me/api/portraits/women/6.jpg"
   }
 ]

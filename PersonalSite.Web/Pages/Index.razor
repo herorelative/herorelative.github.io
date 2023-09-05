@@ -6,7 +6,7 @@
     <meta name="description" content="Welcome to full-stack .NET core engineer personal weblog." />
 </HeadContent>
 
-<div class="bg-white">
+@*<div class="bg-white">
 
     <div class="relative isolate px-6 pt-14 lg:px-8">
         <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -15,7 +15,7 @@
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="sm:mb-8 sm:flex sm:justify-center">
                 <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Hi! there. @greeting @*<a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>*@
+                    Hi! there. @greeting 
                 </div>
             </div>
             <div class="text-center">
@@ -31,9 +31,115 @@
             <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
     </div>
-</div>
+</div>*@
 
-<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+<section class="bg-gray-900 text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
+        <div class="mx-auto max-w-3xl text-center">
+            <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+                Experienced .NET Core
+
+                <span class="sm:block p-2"> Full-Stack Engineer </span>
+            </h1>
+
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+                Building and maintaining robust solutions since 2005.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a class="block w-full rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                   href="/contact">
+                    Contact
+                </a>
+
+               @*  <a class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                   href="/about">
+                    Learn More
+                </a> *@
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+<section class="my-16">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                <img alt="Zar Ni Myo"
+                     src="/zarnimyo_online.jpg"
+                     class="absolute inset-0 h-full w-full object-cover" />
+            </div>
+
+            <div class="lg:py-24">
+                <h2 class="text-3xl font-bold sm:text-4xl">Hey there,</h2>
+
+                <p class="mt-4 text-lg leading-8 text-gray-600">
+                    I am Zar Ni Myo, who revels in a business problem solution challenge. I always look for projects that challenge me and take me out of my comfort zone.
+                </p>
+
+                <a href="/about"
+                   class="mt-8 inline-block w-full rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto">
+                    @* mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400 *@
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* <section class="bg-gray-900">
+    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-lg text-center">
+            <h2 class="text-2xl font-bold text-white md:text-3xl">
+                Subscribe to my newsletter.
+            </h2>
+
+            <p class="hidden text-gray-500 sm:mt-4 sm:block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor
+                officia blanditiis repellat in, vero, aperiam porro ipsum laboriosam
+                consequuntur exercitationem incidunt tempora nisi?
+            </p>
+        </div>
+
+        <div class="mx-auto mt-8 max-w-xl">
+            <form action="#" class="sm:flex sm:gap-4">
+                <div class="sm:flex-1">
+                    <label for="email" class="sr-only">Email</label>
+
+                    <input type="email"
+                           placeholder="Email address"
+                           class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400" />
+                </div>
+
+                <button type="submit"
+                        class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-rose-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto">
+                    <span class="text-sm font-medium"> Sign Up </span>
+
+                    <svg class="h-5 w-5 rtl:rotate-180"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</section> *@
+
+@*<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div class="max-w-xl lg:max-w-lg">
@@ -70,7 +176,7 @@
     <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
         <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-</div>
+</div>*@
 
 @code {
     private string? greeting = "";
